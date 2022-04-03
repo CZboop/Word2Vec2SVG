@@ -1,6 +1,6 @@
 import './App.css';
 import DisplayWordSVG from './components/DisplayWordSVG';
-import data from './data/scp_word_polygon_keyvals.json';
+import data from './data/scp_word_polygon_keyvals_ultralite.json';
 import {useState} from 'react';
 // data may be too big to import all of it? v slow to load - get lighter version of dataset, most common words
 
@@ -29,7 +29,7 @@ console.log(wordPoints)
     <div className="App">
       <header className="App-header">
         <h1>Word2Vec2SVG</h1>
-        <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   
            <polygon points={wordPoints}
               fill="black" stroke="black" />
