@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .App {
   height: 60vh;
 }
 
 body{
-  background-color: black;
+  background-color: rgb(116, 117, 114);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, label {
   color: rgb(106, 255, 106);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .App-header{
