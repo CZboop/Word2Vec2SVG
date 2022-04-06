@@ -35,16 +35,10 @@ const wordPoints2 = word2 ? data[word2]: null;
       <header className="App-header">
         <h1>Word2Vec2SVG</h1>
       </header>
-      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-           <polygon points={wordPoints1}
-              fill="rgb(106, 255, 106)"  />
-      </svg>
-      <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-           <polygon points={wordPoints2}
-              fill="rgb(106, 255, 106)"  />
-      </svg>
-      <DisplayWordSVG word={word1} handleSubmit={handleSubmit1} setWord={setWord1} />
-      <DisplayWordSVG word={word2} handleSubmit={handleSubmit2} setWord={setWord2} />
+      <div className="main-body-container">
+        <DisplayWordSVG word={word1} handleSubmit={handleSubmit1} setWord={setWord1} wordPoints={wordPoints1} />
+        <DisplayWordSVG word={word2} handleSubmit={handleSubmit2} setWord={setWord2} wordPoints={wordPoints2} />
+      </div>
     </div>
     </>
   );
