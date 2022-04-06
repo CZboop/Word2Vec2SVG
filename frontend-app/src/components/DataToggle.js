@@ -1,10 +1,10 @@
 import React from 'react';
+import './DataToggle.css';
 
 const DataToggle = ({handleDataChange, text}) => {
-    // if 
   return (
-    <div>
-        <button onClick={handleDataChange}>{text}</button>
+    <div className="data-toggle-container">
+        <button type="button" onClick={handleDataChange}>{text}</button>
     </div>
   )
 }

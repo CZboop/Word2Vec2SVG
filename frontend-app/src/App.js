@@ -15,7 +15,7 @@ function App() {
     return stored;
   }
 
-const [data, setData] = useState(getSessionStorageOrDefault('data', complexData));
+const [data, setData] = useState(getSessionStorageOrDefault('data', simpleData));
 const [text, setText] = useState(data === complexData ? "View Simpler Shapes" : "View More Complex Shapes")
 
 const handleDataChange = () => {
@@ -36,10 +36,10 @@ const handleSubmit2 = () => {
   sessionStorage.setItem('currentWord2', word2)
 }
 
-const [word1, setWord1] = useState(getSessionStorageOrDefault('currentWord1', "example"));
+const [word1, setWord1] = useState(getSessionStorageOrDefault('currentWord1', "space"));
 const wordPoints1 = word1 ? data[word1]: null;
 
-const [word2, setWord2] = useState(getSessionStorageOrDefault('currentWord2', "example"));
+const [word2, setWord2] = useState(getSessionStorageOrDefault('currentWord2', "time"));
 const wordPoints2 = word2 ? data[word2]: null;
 
   return (
