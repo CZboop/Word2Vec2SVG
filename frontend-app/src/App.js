@@ -50,8 +50,10 @@ const wordPoints2 = word2 ? data[word2]: null;
       </header>
       <DataToggle handleDataChange={handleDataChange} text={text} />
       <div className="main-body-container">
-        <DisplayWordSVG word={word1} handleSubmit={handleSubmit1} setWord={setWord1} wordPoints={wordPoints1} />
-        <DisplayWordSVG word={word2} handleSubmit={handleSubmit2} setWord={setWord2} wordPoints={wordPoints2} />
+        <DisplayWordSVG word={word1} handleSubmit={handleSubmit1} viewBoxScale={data === complexData ? "-1 -3 20 20": "130 125 40 40"}
+        setWord={setWord1} wordPoints={wordPoints1} />
+        <DisplayWordSVG word={word2} handleSubmit={handleSubmit2} viewBoxScale={data === complexData ? "-1 -3 20 20": "130 125 40 40"}
+        setWord={setWord2} wordPoints={wordPoints2} />
       </div>
     </div>
     </>
