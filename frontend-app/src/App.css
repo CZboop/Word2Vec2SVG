@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
-  background-color: rgb(116, 117, 114);
+  background-color: rgb(58, 58, 58);
 }
 
 .header {
@@ -17,6 +17,10 @@ h1, h2, h3, p, label {
   font-family: 'Bebas Neue', cursive;
 }
 
+h1 {
+  font-size: 300%;
+}
+
 svg {
   height: 70vh;
   display: block;
@@ -26,10 +30,11 @@ svg {
 input[type=submit]{
   color: black;
   font-family: 'Bebas Neue', cursive;
+  background-color: rgb(110, 110, 110);
+  color: rgb(106, 255, 106);
 }
 
 form {
-  /* align-items: center; */
   margin-left: auto;
   margin-right: auto;
 }

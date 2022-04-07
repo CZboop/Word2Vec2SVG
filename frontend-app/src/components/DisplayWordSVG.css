@@ -4,7 +4,14 @@ form {
 }
 
 .word-svg-container {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 45vw;
+    height: 65vh;
+}
+
+.label {
+    padding: 2em;
 }

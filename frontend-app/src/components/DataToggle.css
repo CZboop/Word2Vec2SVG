@@ -5,7 +5,8 @@ button {
     margin-right: auto;
     text-align: center;
     font-family: 'Bebas Neue', cursive;
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(110, 110, 110);
+    font-size: 90%;
 }
 .data-toggle-container {
     display: flex;

@@ -13,13 +13,8 @@ const DisplayWordSVG = ({word, handleSubmit, setWord, wordPoints, viewBoxScale})
            <polygon points={wordPoints}
               fill="rgb(106, 255, 106)"  />
       </svg>
-        <form onSubmit={handleSubmit}>
-        <label>
-          Word: 
-          <input type="text" value={word} onChange={handleInputChange} />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+        <label> Word: </label>
+        <input type="text" value={word} onChange={handleInputChange} />
     </div>
   )
 }
