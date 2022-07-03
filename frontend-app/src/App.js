@@ -1,7 +1,7 @@
 import './App.css';
 import DisplayWordSVG from './components/DisplayWordSVG';
-import complexData from './data/word_polygon_data_complex.json';
-import simpleData from './data/word_polygon_data_simple.json';
+import complexData from './data/normalised_polygon_data.json';
+import simpleData from './data/normalised_polygon_data_simple.json';
 import {useState} from 'react';
 import DataToggle from './components/DataToggle';
 
@@ -50,9 +50,9 @@ const wordPoints2 = word2 ? data[word2]: null;
       </header>
       <DataToggle handleDataChange={handleDataChange} text={text} />
       <div className="main-body-container">
-        <DisplayWordSVG word={word1} handleSubmit={handleSubmit1} viewBoxScale={data === complexData ? "-5 -3 20 20": "121 125 40 40"}
+        <DisplayWordSVG word={word1} handleSubmit={handleSubmit1} viewBoxScale={data === complexData ? "-5 -3 40 40": "-5 -3 40 40"}
         setWord={setWord1} wordPoints={wordPoints1} />
-        <DisplayWordSVG word={word2} handleSubmit={handleSubmit2} viewBoxScale={data === complexData ? "-5 -3 20 20": "121 125 40 40"}
+        <DisplayWordSVG word={word2} handleSubmit={handleSubmit2} viewBoxScale={data === complexData ? "-5 -3 40 40": "-5 -3 40 40"}
         setWord={setWord2} wordPoints={wordPoints2} />
       </div>
     </div>
